@@ -4,10 +4,12 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.IE;
 using Selenium_1.Configuration;
+using Selenium_1.CustomException;
 using Selenium_1.Settings;
 
 namespace Selenium_1.BaseClasses
 {
+    [TestClass]
     public class BaseClass
     {
         private static IWebDriver GetFirefoxDriver()
@@ -36,12 +38,17 @@ namespace Selenium_1.BaseClasses
             switch (ObjectRepository.Config.GetBrowser())
             {
                 case BrowserType.firefox:
+                    ObjectRepository.Driver = GetFirefoxDriver();
                     break;
                 case BrowserType.chrome:
+                    ObjectRepository.Driver = GetChromeDriver();
                     break;
                 case BrowserType.ie:
+                    ObjectRepository.Driver = GetIEDriver();
                     break;
                 default:
+                    throw new NoSuitableDriverFound("driver not supported");
+                    
             }
         }
     }

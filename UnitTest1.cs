@@ -13,15 +13,15 @@ namespace Selenium_1
     [TestClass]
     public class UnitTest1
     {
-        [TestMethod]
-        public void TestMethod1()
-        {
-            IWebDriver  cd = new ChromeDriver();
+        //[TestMethod]
+        //public void TestMethod1()
+        //{
+        //    IWebDriver  cd = new ChromeDriver();
             
-            cd.Navigate().GoToUrl("http://way2automation.com/angularjs-protractor/banking/#/login");
-            cd.Close();
-            cd.Quit();
-        }
+        //    cd.Navigate().GoToUrl("http://way2automation.com/angularjs-protractor/banking/#/login");
+        //    cd.Close();
+        //    cd.Quit();
+        //}
 
         [TestMethod]
         public void TestMethod2()
