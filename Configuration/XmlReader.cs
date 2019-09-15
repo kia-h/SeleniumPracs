@@ -13,5 +13,10 @@ namespace Selenium_1.Configuration
         {
             throw new NotImplementedException();
         }
+
+        public string GetWebsite()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

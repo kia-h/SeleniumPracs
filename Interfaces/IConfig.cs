@@ -10,5 +10,6 @@ namespace Selenium_1.Interfaces
     public interface IConfig
     {
         BrowserType GetBrowser();
+        string GetWebsite();
     }
 }

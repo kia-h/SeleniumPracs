@@ -8,6 +8,7 @@ namespace Selenium_1.Settings
 {
     public class AppConfigKeys
     {
-        public const string Browser = "browser";
+        public const string Browser = "Browser";
+        public const string Website = "Website";
     }
 }

@@ -16,5 +16,10 @@ namespace Selenium_1.Configuration
             string b= ConfigurationManager.AppSettings.Get(AppConfigKeys.Browser);
             return (BrowserType)(Enum.Parse(typeof(BrowserType),b));
         }
+
+        public string GetWebsite()
+        {
+            return ConfigurationManager.AppSettings.Get(AppConfigKeys.Website);
+        }
     }
 }

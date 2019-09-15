@@ -23,13 +23,13 @@ namespace Selenium_1
         //    cd.Quit();
         //}
 
-        [TestMethod]
-        public void TestMethod2()
-        {
-            IConfig reader = new AppConfigReader();
-            string b= ConfigurationManager.AppSettings.Get("browser");
-            Console.WriteLine("read from app settings: "+b);
-            Console.WriteLine("read from enum: "+ BrowserType.chrome);
-        }
+        //[TestMethod]
+        //public void TestMethod2()
+        //{
+        //    IConfig reader = new AppConfigReader();
+        //    string b= ConfigurationManager.AppSettings.Get("browser");
+        //    Console.WriteLine("read from app settings: "+b);
+        //    Console.WriteLine("read from enum: "+ BrowserType.chrome);
+        //}
     }
 }

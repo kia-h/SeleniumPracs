@@ -37,13 +37,13 @@ namespace Selenium_1.BaseClasses
 
             switch (ObjectRepository.Config.GetBrowser())
             {
-                case BrowserType.firefox:
+                case BrowserType.Firefox:
                     ObjectRepository.Driver = GetFirefoxDriver();
                     break;
-                case BrowserType.chrome:
+                case BrowserType.Chrome:
                     ObjectRepository.Driver = GetChromeDriver();
                     break;
-                case BrowserType.ie:
+                case BrowserType.InternetExplorere:
                     ObjectRepository.Driver = GetIEDriver();
                     break;
                 default:

@@ -8,8 +8,8 @@ namespace Selenium_1.Configuration
 {
     public enum BrowserType
     {
-        firefox,
-        chrome,
-        ie
+        Firefox,
+        Chrome,
+        InternetExplorere
     }
 }
